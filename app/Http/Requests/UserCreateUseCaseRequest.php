@@ -23,7 +23,7 @@ class UserCreateUseCaseRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255',
-            'email' => 'required|email|unique:users,email|max:255',
+            'email' => 'required|unique:users,email|max:255',
         ];
     }
 }

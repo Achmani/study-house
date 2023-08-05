@@ -23,7 +23,7 @@ class UserReadUseCaseRequest extends FormRequest
     {
         return [
             'page' => 'required|numeric',
-            'search' => 'required|max:255',
+            'search' => 'nullable|max:255',
             'orderBy' => 'required|max:255|in:email,name',
             'orderType' => 'required|in:asc,desc',
         ];
